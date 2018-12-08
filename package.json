@@ -4,16 +4,26 @@
   "description": "Simple Node, Express app.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Jhedi7/simple-express-video-rental-app.git"
+    "url": "git@github.com:Jhedi7/simple-express-video-rental-app.git"
   },
   "author": "Jhedi ayala",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jhedi7/simple-express-video-rental-app/issues"
   },
-  "homepage": "https://github.com/Jhedi7/simple-express-video-rental-app#readme"
+  "homepage": "https://github.com/Jhedi7/simple-express-video-rental-app#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "joi": "^14.3.0",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
 }

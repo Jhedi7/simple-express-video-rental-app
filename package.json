@@ -1,0 +1,19 @@
+{
+  "name": "video-rental",
+  "version": "1.0.0",
+  "description": "Simple Node, Express app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Jhedi7/simple-express-video-rental-app.git"
+  },
+  "author": "Jhedi ayala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jhedi7/simple-express-video-rental-app/issues"
+  },
+  "homepage": "https://github.com/Jhedi7/simple-express-video-rental-app#readme"
+}

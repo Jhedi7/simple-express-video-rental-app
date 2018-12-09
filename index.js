@@ -5,6 +5,8 @@ const logger           = require('./logger')
 const authentication   = require('./authentication')
 const helmet           = require('helmet')
 const morgan           = require('morgan')
+const config           = require('config')
+const rentalDebugger   = require('debug')('app:rental')
 
 app.use(express.json());
 app.use(logger);
@@ -12,8 +14,16 @@ app.use(authentication)
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(helmet());
-app.use(morgan('tiny'));
 
+
+if (app.get('env') === 'development') {
+    app.use(morgan('tiny'));
+    rentalDebugger('Morgan enabled...')
+}
+
+
+//config
+console.log('App name ' + config.get('name'))
 
 const genres = [
   { id: 1, name: 'Action' },  
